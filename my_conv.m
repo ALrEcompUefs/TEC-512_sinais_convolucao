@@ -6,8 +6,6 @@ function [y] = my_conv(x,h)
     x = [x zeros(1,Nh-1)];
     h = [h zeros(1,Nx-1)];
     
-    count = 1;
-    
     y = zeros(1,Ny);
     for i = 1:Ny
         y(i)=0;
